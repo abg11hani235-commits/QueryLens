@@ -1,0 +1,22 @@
+{
+  "exact_match": 77.09,
+  "f1": 85.25,
+  "num_samples": 10570,
+  "inference_time_sec": 34.22,
+  "latency_ms_per_sample": 3.24,
+  "model_checkpoint": "models/distilbert_full_finetuned",
+  "dataset": "SQuAD v1.1 (Full)",
+  "training_samples": 87599,
+  "validation_samples": 10570,
+  "epochs": 2,
+  "effective_batch_size": 16,
+  "learning_rate": 3e-05,
+  "train_runtime_sec": 1972.12,
+  "train_runtime_min": 32.87,
+  "train_loss": 1.2159,
+  "peak_gpu_memory": {
+    "allocated_mb": 780.7275390625,
+    "reserved_mb": 2012.0,
+    "max_allocated_mb": 1758.69384765625
+  }
+}

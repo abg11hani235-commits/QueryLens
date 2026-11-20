@@ -1,0 +1,34 @@
+# ContextQA Model Specifications & Experimental Hyperparameters
+
+baseline:
+  model_name_or_path: "distilbert-base-uncased-distilled-squad"
+  model_type: "distilbert"
+  description: "Pretrained baseline checkpoint distilled on SQuAD v1.1"
+
+models_to_train:
+  distilbert:
+    model_name_or_path: "distilbert-base-uncased"
+    model_type: "distilbert"
+    description: "DistilBERT uncased base model for primary fine-tuning"
+    batch_size: 8
+    gradient_accumulation_steps: 2
+    learning_rate: 3.0e-5
+    weight_decay: 0.01
+
+  bert:
+    model_name_or_path: "bert-base-uncased"
+    model_type: "bert"
+    description: "BERT uncased base model for comparison"
+    batch_size: 4
+    gradient_accumulation_steps: 4
+    learning_rate: 3.0e-5
+    weight_decay: 0.01
+
+  roberta:
+    model_name_or_path: "roberta-base"
+    model_type: "roberta"
+    description: "RoBERTa base model for comparison"
+    batch_size: 4
+    gradient_accumulation_steps: 4
+    learning_rate: 2.0e-5
+    weight_decay: 0.01

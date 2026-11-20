@@ -1,0 +1,10 @@
+{
+  "exact_match": 55.0,
+  "f1": 60.74,
+  "num_samples": 500,
+  "inference_time_sec": 1.52,
+  "latency_ms_per_sample": 3.03,
+  "train_runtime_sec": 85.0448,
+  "train_samples_per_second": 95.996,
+  "train_loss": 2.7937710843980312
+}

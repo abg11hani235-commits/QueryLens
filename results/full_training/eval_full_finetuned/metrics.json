@@ -1,0 +1,7 @@
+{
+  "exact_match": 77.09,
+  "f1": 85.25,
+  "num_samples": 10570,
+  "inference_time_sec": 28.28,
+  "latency_ms_per_sample": 2.68
+}

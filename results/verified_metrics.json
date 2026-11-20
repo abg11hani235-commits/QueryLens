@@ -1,0 +1,78 @@
+{
+  "project_name": "ContextQA",
+  "audit_status": "VERIFIED_ACADEMIC_AUDIT_WITH_FULL_TRAINING",
+  "audit_timestamp": "2026-11-17T01:18:00+02:00",
+  "hardware": {
+    "device_name": "NVIDIA GeForce RTX 3060 Laptop GPU",
+    "total_vram_mb": 6144,
+    "cuda_runtime": "12.4",
+    "pytorch_version": "2.6.0+cu124"
+  },
+  "full_fine_tuned_model": {
+    "architecture": "DistilBertForQuestionAnswering",
+    "base_checkpoint": "models/distilbert_base",
+    "checkpoint_directory": "models/distilbert_full_finetuned",
+    "training_samples_used": 87599,
+    "total_dataset_train_samples": 87599,
+    "dataset_percentage_trained": 100.0,
+    "epochs_trained": 2.0,
+    "total_optimization_steps": 11066,
+    "per_device_batch_size": 8,
+    "gradient_accumulation_steps": 2,
+    "effective_batch_size": 16,
+    "learning_rate": 3e-05,
+    "optimizer": "AdamW",
+    "precision": "FP16 Mixed Precision",
+    "mean_training_loss": 1.2159,
+    "training_runtime_sec": 1972.12,
+    "training_runtime_min": 32.87,
+    "peak_vram_allocated_mb": 1758.69
+  },
+  "subset_4k_fine_tuned_model": {
+    "architecture": "DistilBertForQuestionAnswering",
+    "base_checkpoint": "distilbert-base-uncased",
+    "checkpoint_directory": "models/distilbert_finetuned",
+    "training_samples_used": 4000,
+    "dataset_percentage_trained": 4.57,
+    "epochs_trained": 2.0,
+    "total_optimization_steps": 512,
+    "training_runtime_sec": 85.04,
+    "mean_training_loss": 2.7938
+  },
+  "complete_validation_evaluation_10570_samples": {
+    "total_validation_samples": 10570,
+    "models_evaluated": {
+      "pretrained_baseline": {
+        "checkpoint": "models/baseline",
+        "training_samples": 87599,
+        "exact_match": 79.10,
+        "f1_score": 86.87,
+        "latency_ms_per_sample": 3.01,
+        "total_inference_time_sec": 31.83
+      },
+      "full_fine_tuned_ours": {
+        "checkpoint": "models/distilbert_full_finetuned",
+        "training_samples": 87599,
+        "exact_match": 77.09,
+        "f1_score": 85.25,
+        "latency_ms_per_sample": 2.68,
+        "total_inference_time_sec": 28.28
+      },
+      "subset_4k_fine_tuned_ours": {
+        "checkpoint": "models/distilbert_finetuned",
+        "training_samples": 4000,
+        "exact_match": 47.05,
+        "f1_score": 57.42,
+        "latency_ms_per_sample": 2.92,
+        "total_inference_time_sec": 30.82
+      }
+    }
+  },
+  "verified_test_suite": {
+    "total_tests": 15,
+    "passed": 15,
+    "failed": 0,
+    "skipped": 0,
+    "pass_rate_pct": 100.0
+  }
+}

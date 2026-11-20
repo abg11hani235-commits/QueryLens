@@ -1,0 +1,60 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual Environment
+.venv/
+venv/
+ENV/
+env/
+
+# Jupyter Notebooks
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*
+
+# Hugging Face and Datasets cache
+.cache/
+hf_cache/
+
+# Large Model Checkpoints & Logs
+models/*
+!models/.gitkeep
+*.safetensors
+*.pt
+*.pth
+*.bin
+*.downloading
+runs/
+wandb/
+.pytest_cache/
+
+# Local Data (keep only sample_data directory structure)
+data/*
+!data/sample_data/
+!data/sample_data/.gitkeep
+
+# IDEs & OS
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db

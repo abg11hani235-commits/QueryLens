@@ -1,0 +1,4 @@
+model_id,display_name,training_samples,exact_match,f1_score,latency_ms,total_inference_time_sec
+baseline,Pretrained Baseline (Full SQuAD),87599,79.1,86.87,3.01,31.83
+finetuned_4k,Fine-Tuned 4k Subset (Ours),4000,47.05,57.42,2.92,30.82
+full_finetuned,Full Fine-Tuned (Ours),87599,77.09,85.25,2.68,28.28
