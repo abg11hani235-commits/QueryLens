@@ -58,3 +58,6 @@ data/*
 *.swo
 .DS_Store
 Thumbs.db
+
+staging/
+

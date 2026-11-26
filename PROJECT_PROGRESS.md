@@ -83,3 +83,18 @@ Result: **15 passed in 16.43s** (100% Pass Rate):
 13. `tests/test_utils.py::test_f1_score` PASSED
 14. `tests/test_utils.py::test_metric_max_over_ground_truths` PASSED
 15. `tests/test_utils.py::test_highlight_answer_in_context` PASSED
+
+---
+
+## Hugging Face Deployment & Live Space
+- **Space URL**: [https://huggingface.co/spaces/a7medanoo/QueryLens](https://huggingface.co/spaces/a7medanoo/QueryLens)
+- **Model Repository**: [https://huggingface.co/a7medanoo/querylens-distilbert-squad](https://huggingface.co/a7medanoo/querylens-distilbert-squad)
+- **Hardware Tier**: ZeroGPU (`zero-a10g`) - NVIDIA RTX PRO 6000
+- **Application Framework**: Gradio 6.32.0 (with MCP server support)
+- **Features**:
+  - Interactive context & question inputs
+  - Answer extraction with sliding-window span ranking
+  - Dynamic HTML context highlighting
+  - Real-time confidence score & character span indicators
+  - Curated SQuAD v1.1 benchmark examples
+  - Status: Verified live and fully operational (`HTTP 200`, `stage: RUNNING`)
